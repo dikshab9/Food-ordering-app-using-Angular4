@@ -76,7 +76,7 @@ export class SearchService {
    getRestaurants(cuisine:HTMLInputElement, city:HTMLInputElement){
        
      
-       let headers = new Headers({ 'user-key' : '2070452acff812f8390d2927eb2ceed0' });
+       let headers = new Headers({ 'user-key' : '4ac19232b9bd80a871ee1735ec470f4a' });
        let requestOpt = new RequestOptions({ headers: headers });
      
        var apiLink = 'https://developers.zomato.com/api/v2.1/search?entity_id='+(city.value)+'&entity_type=city&cuisines=' + (cuisine.value);
@@ -88,7 +88,7 @@ export class SearchService {
  }
 
  getCuisine(city:HTMLInputElement):any{
-   let headers = new Headers({ 'user-key' : '2070452acff812f8390d2927eb2ceed0' });
+   let headers = new Headers({ 'user-key' : '4ac19232b9bd80a871ee1735ec470f4a' });
    let requestOpt = new RequestOptions({ headers: headers });
    // console.log(city.value);
    var apiLink = 'https://developers.zomato.com/api/v2.1/cuisines?city_id='+(city.value);
