@@ -1,0 +1,95 @@
+<div  id="searchtab" >
+  <div class="row" >
+    <div id="searchbar">
+    <div class="form-inline">
+      
+         <!-- <select class="form-control" #city aria-placeholder="City" aria-dropeffect="fade">
+            <option >Bangalore</option>
+            <option>Chennai</option>
+            <option >1</option>
+  
+           </select>  
+         
+         
+            <select class="form-control" #cuisine aria-placeholder="Cuisines">
+            <option value=50>Please Select A Cuisine</option>
+            <option value=25>Chinese</option>
+            <option value=82>Pizza</option>
+            <option value=50>North Indian</option>
+            <option value=55>Italian</option>
+            <option value=88>Rajasthani</option>
+            <option value=85>South Indian</option>
+            </select> -->
+          
+        <!-- <button (click)="performSearch(cuisine)" class="btn btn-primary"> Search by cuisine</button>
+       
+
+            <br> -->
+
+            <select class="form-control" #city aria-placeholder="City" aria-dropeffect="fade" >
+              <option value=4>Bangalore</option>
+              <option value=3>Mumbai</option>
+              <option value=1>Delhi</option>
+          </select>                        
+          <button (click)="performSearch_cuisine(city)" class="btn btn-success">Location</button>
+          
+              <!-- <select class="form-control" #cuisine_id aria-placeholder="Cuisines">
+                  <option *ngFor="let cuisi of cuisines.cuisines" [value]="cuisi.id">
+                      {{cuisi.cuisine.cuisine_name}}</option>
+              
+              </select> -->
+
+           
+
+              <!-- <button (click)="performSearch(cuisine_id)" class="btn btn-primary"> Search </button> -->
+              
+              <!-- <button (click)="performSearch_cuisine(cuisine_id.value)" class="btn btn-primary"> Search </button> -->
+              
+          
+          <div *ngIf="cuisines">
+            <select class="form-control" #cuisine_id aria-placeholder="Cuisines" id="cuisinebutton">
+                <option *ngFor="let cuisi of cuisines.cuisines" [value]="cuisi.cuisine.cuisine_id">
+                    {{cuisi.cuisine.cuisine_name}}</option>
+            
+            </select>
+            <button (click)="performSearch(cuisine_id,city)" class="btn btn-success" id="cuisinebutton"> Search </button>
+            <br>
+            
+            <br>
+        </div>
+          </div>
+      
+       <div class="row search-content">
+        <ul *ngFor="let rest of restaurants"> <li>
+          <div class="container"> 
+            <div class="row well">
+            
+                  
+              
+                  <div class="col-sm-3">
+                  <a href="#">
+                    <img class="img-responsive lolu" src="{{rest.restaurant.thumb}}" alt="How to click portraits">
+                  </a>
+                  </div>
+                  <div class="col-sm-9">
+                  
+                  
+                    
+                      <h2>{{rest.restaurant.name}} </h2>
+          
+                  
+                  <p>{{rest.restaurant.location.locality}}<br> Cost for two: {{rest.restaurant.average_cost_for_two}} <br>
+                    <!-- <button class="btn btn-success"> Save </button> -->
+                      <button class="btn btn-success" id="btndanger"> Add to favorites</button></p> 
+                  
+                  
+                  
+                  </div>
+            </div>
+          </div>
+        </li></ul>
+        </div>
+       
+     </div>
+  </div>
+</div>

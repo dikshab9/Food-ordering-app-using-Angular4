@@ -1,0 +1,45 @@
+
+#searchbar{
+    
+    
+     height: 400px;
+     width:auto;
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 20px;
+ }
+ 
+ #id{
+     padding:auto;
+ }
+ ul{
+     list-style: none;
+ }
+ .row {
+     margin-left: 0px;
+     margin-right: 0px;
+ 
+ }
+ .col-sm-11{
+ padding-right: 0px;
+ }
+ .form-inline{
+     text-align: center;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 190px;
+     padding-bottom: 40px;
+ } 
+ 
+ .form-inline .form-control{
+     width:200px;
+ }
+ .lolu{
+ height: 124px;
+ }
+ #cuisinebutton{
+     margin-top: 10px;
+ }
+ #btndanger{
+     margin-top: 10px;
+ }
