@@ -10,7 +10,8 @@ import { SearchContentComponent } from './search-content/search-content.componen
 @Component({
   selector: 'my-app',
 
-  template: `<my-nav> </my-nav>
+  template: `
+             <my-nav> </my-nav>
              <search></search>
              
              <my-footer> </my-footer>

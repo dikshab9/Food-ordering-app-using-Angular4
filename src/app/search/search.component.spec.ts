@@ -12,6 +12,7 @@ describe('SearchComponent', () => {
     })
     .compileComponents();
   }));
+  
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SearchComponent);
